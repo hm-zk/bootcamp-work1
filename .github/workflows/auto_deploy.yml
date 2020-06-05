@@ -25,10 +25,10 @@ jobs:
     - name: Installing Node
       uses: actions/setup-node@v2-beta
       with:
-        node: 12 
+        node-version: 12 
 
     # Runs a set of commands using the runners shell
     - name: Installing Surge
-      run: npm install -g surge
+      run: npm install --global surge
     - name: Deploying using Surge
       run: surge ./ hm-zk.surge.sh --token $ {{ secrets.SURGE_TOKEN }}
