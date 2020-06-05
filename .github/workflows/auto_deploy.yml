@@ -31,4 +31,4 @@ jobs:
     - name: Installing Surge
       run: npm install --global surge
     - name: Deploying using Surge
-      run: surge ./ hm-zk.surge.sh --token $ {{ secrets.SURGE_TOKEN }}
+      run: surge ./ hm-zk.surge.sh --token "715995536f5844fab89143ef61e536f8"
